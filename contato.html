@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Projeto Livraria</title>
+    <meta charset="utf-8" />
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.1/dist/css/bootstrap.min.css">
+</head>
+
+<body>
+    <!-- Setor de Cabeçalho -->
+    <header class="text-center">
+        <a href="../index.html">
+            <img src="../imagens/logologo.jpeg" width="200" /> </a>
+    </header>
+    <!--Setor de navegação-->
+    <nav class="text-center mt-3">
+        <a href="../index.html">Home</a> |
+        <a href="produtos.html">Produtos</a> |
+        <a href="contato.html">Contato</a>
+    </nav>
+    <!--Setor de conteúdo-->
+    <section class="container">
+        <h1 class="text-center mt-5 mb-5"> Contato</h1>
+        <article>
+            <!--Formulário de contato-->
+            <form id="formContato" method="post" action="" class="w-50 mx-auto p-3 mt-4 mb-4"
+                style="border:1px solid #ccc;border-radius: 12px;">
+                <fieldset>
+                    <legend class="formulario"> Fale conosco </legend>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="Nome" name="nomeContato" id="nomeContato"
+                            maxlength="50" required>
+                    </div>
+                    <div class="form-group">
+                        <input class="form-control" placeholder="E-mail" name="emailContato" id="emailContato"
+                            type="email" required>
+                    </div>
+                    <div class="form-group">
+                        <label> Comentários: </label>
+                        </br><textarea class="form-control" name="comentario" id="comentario" rows="8"></textarea>
+                    </div>
+                    <div>
+                        <button type="button" id="btContato" class="btn btn-info">Confirmar</button>
+                    </div>
+                </fieldset>
+            </form>
+        </article>
+    </section>
+    <!--Final do Form Contato-->
+
+    <!--Setor de rodapé-->
+    <footer class="bg-dark p-3 text-white text-center mt-4">
+        <p>&copy; 2022 - Todos os direitos reservados</p>
+    </footer>
+</body>
+<script src="../js/controle.js"></script>
+
+</html>
