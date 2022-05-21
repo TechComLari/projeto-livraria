@@ -1,14 +1,3 @@
-//caso coloque a chamada dentro do <head> use o window.onload(){....seu código todo aqui}
-console.log("Hello World!")
-//document.querySelector("h1").innerHTML="Entre em contato"
-
-//document (documento HTML)
-//querySelector (consulta um elemento HTML)
-//document.querySelector("h1").innerHTML+=" >>"
-
-//Acesso a um elemento de formulario
-console.log(document.forms.formContato)
-
 //atribuindo o acesso ao formContato para a variavel formC
 var formC=document.forms.formContato
 
@@ -23,7 +12,4 @@ document.querySelector("#btContato").onclick = function () {
     } else {
         formC.submit();
     }
-    //alert(document.forms.formContato.nomeContato.value)
-    //alert(document.forms.formContato.emailContato.value)
-    //alert(document.forms.formContato.comentario.value)
 }  

@@ -7,6 +7,8 @@ document.querySelector("#btLogin").onclick = function () {
     } else if (formL.senha.value == "") {
         alert("Preencha o senha!")
     } else {
-        formL.submit();
+        formL.submit()
+        localStorage.emailUser=formL.email.value
     }
 }
+
