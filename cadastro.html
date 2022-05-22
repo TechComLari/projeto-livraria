@@ -9,8 +9,7 @@
   <link rel="stylesheet" href="css/loginLivraria.css" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
 
-
-  <title> Login | Gato Lendo </title>
+  <title>Cadastro | Gato Lendo</title>
 </head>
 
 <body>
@@ -20,17 +19,26 @@
     <a href="index.html"><img src="imgs/gatoLendoLogo.png" width="240" /></a>
   </header>
 
-  <!--Setor de conteúdo-->
   <div class="container">
-    <div class="card">
-      <h1>Login</h1>
 
-      <!--Formulário Login-->
-      <form id="formLogin" method="post" action="index.html">
+    <!-- Login-->
+    <div class="card">
+      <h1>Cadastro</h1>
+      <form id="formCadastro" method="post" action="index.html">
+
+        <div class="label-float">
+          <input type="text" name="nome" id="nome" maxlength="50" placeholder="" required>
+          <label>Nome Completo</label>
+        </div>
 
         <div class="label-float">
           <input type="text" name="email" id="email" maxlength="50" placeholder="" required>
           <label>E-mail</label>
+        </div>
+
+        <div class="label-float">
+          <input type="tel" name="celular" id="celular" maxlength="11" placeholder="" required>
+          <label>Celular</label>
         </div>
 
         <div class="label-float">
@@ -39,41 +47,40 @@
           <i id="verSenha" class="fa fa-eye" aria-hidden="true"></i>
         </div>
 
-        <div class="justify-center"><button type="button" id="btLogin" class="btn btn-dark">Entrar</button>
+        <div class="label-float">
+          <input name="confirmeSenha" id="confirmeSenha" maxlength="8" type="password" placeholder="" required>
+          <label>Confirme a senha</label>
+          <i id="verConfirmeSenha" class="fa fa-eye" aria-hidden="true"></i>
+        </div>
+
+        <div class="justify-center"><button type="button" id="btCadastro" class="btn btn-dark">Cadastrar</button>
         </div>
 
         <hr>
 
-        <div class="text-center">
-          <p> Ainda não tem conta? <a href='cadastro.html'> Cadastre-se</a></p>
+        <div>
+          <p class="text-center"><a href='login.html'> Fazer Login</a></p>
         </div>
-
       </form>
     </div>
   </div>
-
   <!--Setor de rodapé-->
   <footer class="text-center text-white" style="background-color: #f1f1f1;">
-    
     <!-- Grid container -->
     <div class="container pt-2">
-      
       <!-- Rede Social-->
       <section class="mb-4">
-        
         <!-- Instagram -->
-        <a class="btn btn-link btn-floating btn-lg text-dark m-1" target="_blank"
-          href="https://instagram.com/TechComLari" role="button"><i class="fa fa-instagram"></i></a>
-       
-          <!-- Linkedin -->
-        <a class="btn btn-link btn-floating btn-lg text-dark m-1" target="_blank"
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://instagram.com/TechComLari"
+          role="button"><i class="fa fa-instagram"></i></a>
+        <!-- Linkedin -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1"
           href="https://www.linkedin.com/in/larissa-soares-tech/" role="button"><i class="fa fa-linkedin"></i></a>
-       
-          <!-- Github -->
-        <a class="btn btn-link btn-floating btn-lg text-dark m-1" target="_blank" href="https://github.com/TechComLari"
-          role="button"><i class="fa fa-github"></i></a>
-      
-        </section>
+        <!-- Github -->
+        <a class="btn btn-link btn-floating btn-lg text-dark m-1" href="https://github.com/TechComLari" role="button"><i
+            class="fa fa-github"></i></a>
+      </section>
+      <!-- Rede Social-->
     </div>
 
     <!-- Copyright -->
@@ -83,6 +90,6 @@
 
   </footer>
 </body>
-<script src="js/login.js"></script>
+<script src="js/cadastroLivraria.js"></script>
 
 </html>
